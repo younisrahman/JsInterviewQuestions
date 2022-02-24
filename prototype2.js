@@ -1,3 +1,5 @@
+Object.prototype.sample = 'this a sample prtotype';
+
 let users = {
   getFullName: function () {
     return this.name + ' ' + this.lastName;
@@ -22,3 +24,4 @@ teacher.__proto__ = users;
 student.__proto__ = users;
 console.warn(student.getAge());
 console.warn(teacher.getAge());
+console.warn(teacher.sample);
